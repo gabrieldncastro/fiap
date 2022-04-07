@@ -12,3 +12,9 @@ VOCÊ ESTÁ DIGITANDO AS NOTAS DOS ALUNOS PARES (ou ímpares, quando for o caso)
 
 POR FAVOR, INSIRA A NOTA DO ALUNO DE NÚMERO x.
 """
+
+totalStudents = int(50)
+oddNumberedStudantsGrade = float(input('Digite a nota do estudante número'))
+evenNumberedStudantsGrade = int()
+oddsGradeAvarage = float()
+evensGradeAvarage = float()
