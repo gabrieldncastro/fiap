@@ -1,20 +1,35 @@
-"""
-Muitos professores preferem adotar modelos diferentes de provas quando dão aulas para turmas muito grandes. Por essa razão, 
-a escola de inglês JoWell Sant'ana, em que todas as turmas são compostas por 50 alunos, solicitou que você criasse um sistema 
-capaz de atender ao seguinte requisito: o professor deve digitar primeiro as notas dos 25 alunos que têm número ímpar na chamada 
-(1, 3, 5..., 47, 49) e depois as notas dos 25 alunos que têm número par (2, 4, 6..., 48, 50). O sistema deve calcular e exibir 
-a média de cada uma das metades da sala e informar, ao final, qual delas teve a maior nota.
+#exercicio 03
 
-Há ainda um pedido especial do mantenedor: para que os professores não se confundam, ao digitar cada uma das notas deve ser exibida 
-uma mensagem no seguinte padrão:
+#variáveis
+estudante = 1
 
-VOCÊ ESTÁ DIGITANDO AS NOTAS DOS ALUNOS PARES (ou ímpares, quando for o caso).
+notaImpar = 0
+estudanteImpar = 0
+mediaImpar = 0
 
-POR FAVOR, INSIRA A NOTA DO ALUNO DE NÚMERO x.
-"""
+notaPar = 0
+estudantePar = 0
+mediaPar = 0
 
-totalStudents = int(50)
-oddNumberedStudantsGrade = float(input('Digite a nota do estudante número'))
-evenNumberedStudantsGrade = int()
-oddsGradeAvarage = float()
-evensGradeAvarage = float()
+#alunos quem tem o numero impar na chamada
+print('\nAtenção, você está digitando a nota dos alunos ímpares\n')
+
+while (estudante <= 10):
+    if estudante % 2 == 1:
+        notaImpar = float(input(f'Digite a nota do estudante nº{estudante}: '))
+        mediaImpar = mediaImpar + notaImpar
+        estudanteImpar = estudanteImpar + 1
+    estudante = estudante + 1
+estudante = 0
+
+#alunos que tem o numero par na chamada
+print('\nAtenção, você está digitando a nota dos estudantes pares\n')
+while (estudante <= 10):
+    if estudante % 2 == 0 and estudante > 0:
+        notaPar = float(input(f'Digite a nota do estudante nº{estudante}: '))
+        mediaPar = mediaPar + notaPar
+        estudantePar = estudantePar + 1
+    estudante = estudante + 1
+estudante = 0
+
+#print(f'\n A média dos estudantes foi:\n Estudantes Impares: {:.1f} | Estudantes Par:{:.1f}')

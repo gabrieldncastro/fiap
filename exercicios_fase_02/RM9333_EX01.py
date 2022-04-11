@@ -19,10 +19,11 @@ while validPlan == False:
         paymantPercentage = annualInvoice * 0.05
         validPlan = True
     else:
-        print('\n\nEssa não é uma opção válida!')
+        print('\n\nEssa não é uma opção válida!') #caso o usuario selecione uma opção inválida, apresente as opções atê que seja feito uma escolha válida
 
 if paymantPercentage != 0:
-    print(f'\nO valor a ser pago para o locatário é: {paymantPercentage:.2f} reais')
+    print(f'\nO valor a ser pago para o locatário é: {paymantPercentage:.2f} Reais\n')
+
 
 
   
